@@ -40,4 +40,31 @@ $(function(){
             $('#intro'+j+'>*').css("display","none")
         }
     }
+
+    showAndDn(1,2,3,4);
+    showAndDn(2,1,3,4);
+    showAndDn(3,4,1,2);
+    showAndDn(4,3,1,2);
+
+    function showAndDn(w,x,y,z) {
+        $('.btn-to-'+w).click(function(){
+            $('.core-'+w).css('display','initial')
+            $('.core-img .core-'+w+' img').css('display','initial')
+            $('.core-text .core-p .core-'+w).css('display','initial')
+            $('.core-text .core-num-btn .core-'+w).css('display','initial')
+            $('.core-arrow img.core-'+w).css('display','initial')
+            $('.core-'+x).css('display','none')
+            $('.core-text .core-p .core-'+x).css('display','none')
+            $('.core-text .core-num-btn .core-'+x).css('display','none')
+            $('.core-arrow img.core-'+x).css('display','none')
+            $('.core-'+y).css('display','none')
+            $('.core-text .core-p .core-'+y).css('display','none')
+            $('.core-text .core-num-btn .core-'+y).css('display','none')
+            $('.core-arrow img.core-'+y).css('display','none')
+            $('.core-'+z).css('display','none')
+            $('.core-text .core-p .core-'+z).css('display','none')
+            $('.core-text .core-num-btn .core-'+z).css('display','none')
+            $('.core-arrow img.core-'+z).css('display','none')
+        })
+    }
 })
