@@ -74,7 +74,7 @@ window.sr = ScrollReveal({
     origin: "bottom",  // 起始位置
     distance: "80px",  // 距離
     duration: 800,  // 動畫時間
-    delay: 0,  // 動畫延遲時間
+    delay: 200,  // 動畫延遲時間
     rotate: { x: 0, y: 0, z: 0 },  // 旋轉角度
     opacity: 0,  // 透明度
     scale: 1, // 縮放比例
