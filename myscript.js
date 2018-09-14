@@ -44,14 +44,19 @@ function rollProgress() {
     var w = d1/d2;
     w = checkTimeWidth(w) *100;
 
-    $('.pro-bar-inner').delay(1500).animate({width: w + "%"},900);
-    $('.pro-bar-ball').delay(1500).animate({left: w + "%"},900);
-    $('.bar-inner').delay(1500).animate({height: (w/100)*633 + "px"},900);
-    $('.bar-ball').delay(1500).animate({top: (w/100)*633 + "px"},900);
+    $('.pro-bar-inner').delay(1500).animate({width: w + "%"},1500);
+    $('.pro-bar-ball').delay(1500).animate({left: w + "%"},1500);
+    $('.bar-inner').delay(1500).animate({height: (w/100)*633 + "px"},1500);
+    $('.bar-ball').delay(1500).animate({top: (w/100)*633 + "px"},1500);
 
 }
 
 $(function(){
+    //click paper
+    $('.ch-paper').click(function(){
+        $('.ch-paper-show').css('display','initial')
+    })
+
     //team member card
     for (let j = 1; j < 10; j++) {
         k = 2*j-1
@@ -68,30 +73,38 @@ $(function(){
     }
 
     //four-core
-    showAndDn(1,2,3,4);
-    showAndDn(2,1,3,4);
-    showAndDn(3,4,1,2);
-    showAndDn(4,3,1,2);
+    // setTimeout(function () { showAndDn(2,1,3,4)},8000);
+    // setTimeout(function () { showAndDn(3,4,1,2)},16000);
+    // setTimeout(function () { showAndDn(4,3,1,2)},24000);
+    // setTimeout(function () { showAndDn(1,2,3,4)},32000);
+
+    clickShowAndDn(1,2,3,4);
+    clickShowAndDn(2,1,3,4);
+    clickShowAndDn(3,4,1,2);
+    clickShowAndDn(4,3,1,2);
 
     function showAndDn(w,x,y,z) {
+        $('.core-'+w).css('display','initial')
+        $('.core-img .core-'+w+' img').css('display','initial')
+        $('.core-text .core-p .core-'+w).css('display','initial')
+        $('.core-text .core-num-btn .core-'+w).css('display','initial')
+        $('.core-arrow img.core-'+w).css('display','initial')
+        $('.core-'+x).css('display','none')
+        $('.core-text .core-p .core-'+x).css('display','none')
+        $('.core-text .core-num-btn .core-'+x).css('display','none')
+        $('.core-arrow img.core-'+x).css('display','none')
+        $('.core-'+y).css('display','none')
+        $('.core-text .core-p .core-'+y).css('display','none')
+        $('.core-text .core-num-btn .core-'+y).css('display','none')
+        $('.core-arrow img.core-'+y).css('display','none')
+        $('.core-'+z).css('display','none')
+        $('.core-text .core-p .core-'+z).css('display','none')
+        $('.core-text .core-num-btn .core-'+z).css('display','none')
+        $('.core-arrow img.core-'+z).css('display','none')
+    }
+    function clickShowAndDn(w,x,y,z) {
         $('.btn-to-'+w).click(function(){
-            $('.core-'+w).css('display','initial')
-            $('.core-img .core-'+w+' img').css('display','initial')
-            $('.core-text .core-p .core-'+w).css('display','initial')
-            $('.core-text .core-num-btn .core-'+w).css('display','initial')
-            $('.core-arrow img.core-'+w).css('display','initial')
-            $('.core-'+x).css('display','none')
-            $('.core-text .core-p .core-'+x).css('display','none')
-            $('.core-text .core-num-btn .core-'+x).css('display','none')
-            $('.core-arrow img.core-'+x).css('display','none')
-            $('.core-'+y).css('display','none')
-            $('.core-text .core-p .core-'+y).css('display','none')
-            $('.core-text .core-num-btn .core-'+y).css('display','none')
-            $('.core-arrow img.core-'+y).css('display','none')
-            $('.core-'+z).css('display','none')
-            $('.core-text .core-p .core-'+z).css('display','none')
-            $('.core-text .core-num-btn .core-'+z).css('display','none')
-            $('.core-arrow img.core-'+z).css('display','none')
+            showAndDn(w,x,y,z)
         })
     }
 })

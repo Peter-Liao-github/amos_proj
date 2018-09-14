@@ -26,11 +26,15 @@
             </audio> -->
         <nav class="navbar navbar-expand-xl navbar-light shadow">
             <ul class="navbar-nav col-lg-4 col-sm-6 col-10">
-                <li class="nav-item">  
-                    <a class="nav-link" href="https://t.me/AmosGlobal">
+                <li class="nav-item dropdown">  
+                    <a class="nav-link" href="#top" id="dropdownMenuLinkJoin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img src="img/header_icon01.png" width="20" height="20" alt=""> 
                         <p>JOIN AMOS</p> 
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkJoin">
+                        <a class="dropdown-item" href="#">AMOS糖果盛宴</a>
+                        <a class="dropdown-item" href="https://t.me/AmosGlobal">Telegram</a>
+                    </div>
                 </li>
             </ul>
             <button class="navbar-toggler my-navbar-button" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,7 +64,16 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                             <!-- <a class="dropdown-item" href="AMOS_白皮書0910.pdf" target="view_window">中文白皮書</a> -->
-                            <a class="dropdown-item" href="#">中文白皮書</a>
+                            <!-- <a class="dropdown-item" href="#">中文白皮書</a> -->
+                            <form>
+                                <div class="form-group input-group">
+                                    <label class="dropdown-item ch-paper" for="exampleInputEmail1">中文白皮書</label>
+                                    <input type="email" class="form-control ch-paper-show" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="輸入 Email">
+                                    <div class="input-group-append ch-paper-show">
+                                        <button type="submit" class="btn input-group-text">送出</button>
+                                    </div>
+                                </div>
+                            </form>
                             <!-- <a class="dropdown-item" href="#">白皮書3</a> -->
                         </div>
                     </li>
@@ -375,9 +388,15 @@
                     <img class="appear point-to-fronter" src="img/block08_txt07.png" alt="">
                 </div>
                 <div class="col-md-1 col-xs-3 line-img">
-                    <img src="img/block08_coinline03.png" alt="">
+                    <!-- <img src="img/block08_coinline03.png" alt="">
                     <img src="img/block08_coinline01.png" alt="">
-                    <img src="img/block08_coinline02.png" alt="">
+                    <img src="img/block08_coinline02.png" alt=""> -->
+                    <img class="non-phone-img" src="img/block08_coinline_all.png" alt="">
+                    <img class="phone-img" src="img/block08_coinline_all_phone.png" alt="">
+                    <!-- <div class="time-line-drop time-line-dropping1"></div>
+                    <div class="time-line-drop time-line-dropping2"></div>
+                    <div class="time-line-drop time-line-dropping3"></div> -->
+
                 </div>
                 <div class="col-xl-3 non-phone-img">
                     <img class="appear point-to-later" src="img/block08_txt02.png" alt="">
