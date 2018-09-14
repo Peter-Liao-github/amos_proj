@@ -11,6 +11,7 @@ function startTime() {
     h = checkTime(h);
     m = checkTime(m);
     s = checkTime(s);
+    
     document.getElementById('day').innerHTML = d;
     document.getElementById('hour').innerHTML = h;
     document.getElementById('min').innerHTML = m;
@@ -26,7 +27,30 @@ function checkTime(i) {
     return i
 }
 
+rollProgress();
+function rollProgress() {
+    var today = new Date();
+    var stday = new Date("Aug 25, 2018 00:00:00");
+    var lastday = new Date("Oct 31, 2018 00:00:00");
+    var timeInterval = today - stday;
+    var totaltimeInterval = lastday - stday;
+    var d1 = Math.floor((timeInterval/(24 * 3600 * 1000)));
+    var d2 = Math.floor((totaltimeInterval/(24 * 3600 * 1000)));
+    
+    function checkTimeWidth(i) {
+        if (i > 1) { i = 1 }
+        return i
+    }
+    var w = d1/d2;
+    w = checkTimeWidth(w) *100;
+
+    $('.pro-bar-inner').delay(1500).animate({width: w + "%"},900);
+    $('.pro-bar-ball').delay(1500).animate({left: w + "%"},900);
+
+}
+
 $(function(){
+    //team member card
     for (let j = 1; j < 10; j++) {
         k = 2*j-1
         $('.thum:nth-of-type('+k+')').click(openIntro);
@@ -41,6 +65,7 @@ $(function(){
         }
     }
 
+    //four-core
     showAndDn(1,2,3,4);
     showAndDn(2,1,3,4);
     showAndDn(3,4,1,2);
