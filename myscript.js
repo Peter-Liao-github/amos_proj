@@ -46,6 +46,8 @@ function rollProgress() {
 
     $('.pro-bar-inner').delay(1500).animate({width: w + "%"},900);
     $('.pro-bar-ball').delay(1500).animate({left: w + "%"},900);
+    $('.bar-inner').delay(1500).animate({height: (w/100)*633 + "px"},900);
+    $('.bar-ball').delay(1500).animate({top: (w/100)*633 + "px"},900);
 
 }
 
