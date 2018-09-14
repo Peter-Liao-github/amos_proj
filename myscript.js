@@ -72,11 +72,31 @@ $(function(){
         }
     }
 
-    //four-core
-    // setTimeout(function () { showAndDn(2,1,3,4)},8000);
-    // setTimeout(function () { showAndDn(3,4,1,2)},16000);
-    // setTimeout(function () { showAndDn(4,3,1,2)},24000);
-    // setTimeout(function () { showAndDn(1,2,3,4)},32000);
+    // four-core
+    setTimeout(function () { showAndDn(2,1,3,4)},10000);
+    setTimeout(function () { showAndDn(3,4,1,2)},20000);
+    setTimeout(function () { showAndDn(4,3,1,2)},30000);
+    setTimeout(function () { showAndDn(1,2,3,4)},40000);
+    setTimeout(function () { showAndDn(2,1,3,4)},50000);
+    setTimeout(function () { showAndDn(3,4,1,2)},60000);
+    setTimeout(function () { showAndDn(4,3,1,2)},70000);
+    setTimeout(function () { showAndDn(1,2,3,4)},80000);
+    setTimeout(function () { showAndDn(2,1,3,4)},90000);
+    setTimeout(function () { showAndDn(3,4,1,2)},100000);
+    setTimeout(function () { showAndDn(4,3,1,2)},110000);
+    setTimeout(function () { showAndDn(1,2,3,4)},120000);
+    setTimeout(function () { showAndDn(2,1,3,4)},130000);
+    setTimeout(function () { showAndDn(3,4,1,2)},140000);
+    setTimeout(function () { showAndDn(4,3,1,2)},150000);
+    setTimeout(function () { showAndDn(1,2,3,4)},160000);
+    setTimeout(function () { showAndDn(2,1,3,4)},170000);
+    setTimeout(function () { showAndDn(3,4,1,2)},180000);
+    setTimeout(function () { showAndDn(4,3,1,2)},190000);
+    setTimeout(function () { showAndDn(1,2,3,4)},200000);
+    setTimeout(function () { showAndDn(2,1,3,4)},210000);
+    setTimeout(function () { showAndDn(3,4,1,2)},220000);
+    setTimeout(function () { showAndDn(4,3,1,2)},230000);
+    setTimeout(function () { showAndDn(1,2,3,4)},240000);
 
     clickShowAndDn(1,2,3,4);
     clickShowAndDn(2,1,3,4);
@@ -134,36 +154,36 @@ sr.reveal( ".appear", {
     // 參數設定[註1]
 });
 
-function iEsc() {
-    return false;
-}
-function iRec() {
-    return true;
-}
-function DisableKeys() {
-    if (event.ctrlKey || event.shiftKey || event.altKey) {
-        window.event.returnValue = false;
-        iEsc();
-    }
-}
-document.ondragstart = iEsc;
-document.onkeydown = DisableKeys;
-document.oncontextmenu = iEsc;
-if (typeof document.onselectstart != "undefined")
-    document.onselectstart = iEsc;
-else {
-    document.onmousedown = iEsc;
-    document.onmouseup = iRec;
-}
+// function iEsc() {
+//     return false;
+// }
+// function iRec() {
+//     return true;
+// }
+// function DisableKeys() {
+//     if (event.ctrlKey || event.shiftKey || event.altKey) {
+//         window.event.returnValue = false;
+//         iEsc();
+//     }
+// }
+// document.ondragstart = iEsc;
+// document.onkeydown = DisableKeys;
+// document.oncontextmenu = iEsc;
+// if (typeof document.onselectstart != "undefined")
+//     document.onselectstart = iEsc;
+// else {
+//     document.onmousedown = iEsc;
+//     document.onmouseup = iRec;
+// }
 
-function DisableRightClick(qsyzDOTnet) {
-    if (window.Event) {
-        if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
-            iEsc();
-    } else
-    if (event.button == 2 || event.button == 3) {
-        event.cancelBubble = true
-        event.returnValue = false;
-        iEsc();
-    }
-}
+// function DisableRightClick(qsyzDOTnet) {
+//     if (window.Event) {
+//         if (qsyzDOTnet.which == 2 || qsyzDOTnet.which == 3)
+//             iEsc();
+//     } else
+//     if (event.button == 2 || event.button == 3) {
+//         event.cancelBubble = true
+//         event.returnValue = false;
+//         iEsc();
+//     }
+// }
