@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>糖果饗宴</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../stylesheet/css/stylesheet.css">
+</head>
+<body class="sugar-body">
+    <div class="container sugar-contanier">
+        <nav class="navbar navbar-expand-xl navbar-light">
+            <ul class="navbar-nav col-lg-4 col-sm-6 col-10">
+                <li class="nav-item dropdown">  
+                    <a class="nav-link" href="../index.html" id="dropdownMenuLinkJoin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="img/candy_bt01.png" width="20" height="20" alt=""> 
+                        <p>回上頁 Back</p> 
+                    </a>
+                </li>
+            </ul>
+            <button class="navbar-toggler my-navbar-button op0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item dropdown op0">
+                        <a class="nav-link" href="#top" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            .
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cover block faq">
+            <div class="row">
+                <div class="col-xl-5 col-md-8 col-12 sugar-top">
+                    <div class="col-md-4 col-10">
+                        <img src="img/candy_logo01.png" alt="">
+                    </div>
+                    <h3>歡迎加入AMOS的糖果盛宴</h3>
+                    <p>只要註冊AMOS，我們就會投77個AMO到您的ETH錢包！只要是每個第100位加入的(如：第100, 第200....)，即可獲得770個AMO！</p>
+                </div>
+            </div>
+        </div>
+        <div class="sugar-form col-xl-5 col-md-8 col-12 ">
+            <div class="col-xl-11 col-12">
+                    <form>
+                        <div class="form-group row">
+                            <label for="email" class="col-3 col-form-label">登入帳號</label>
+                            <div class="col-9">
+                                <input type="email" class="form-control" id="email" placeholder="請輸入 Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="password" class="col-3 col-form-label">密碼</label>
+                            <div class="col-9">
+                                <input type="password" class="form-control" id="password">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="location" class="col-3 col-form-label">所在地點</label>
+                            <div class="col-9">
+                                <input type="location" class="form-control" id="location">
+                            </div>
+                        </div>
+                        <div class="form-group row wallet">
+                            <label for="wallet" class="col-3 col-form-label">ETH 錢包地址</label>
+                            <div class="col-9">
+                                <input type="wallet" class="form-control" id="wallet">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-3">喜歡的運動</div>
+                            <div class="col-9 checkitem">
+                            <div class="form-check form-check-inline row">
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check1">
+                                    <label class="form-check-label" for="check1">極限運動</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check2">
+                                    <label class="form-check-label" for="check2">滑雪</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check3">
+                                    <label class="form-check-label" for="check3">田徑</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check4">
+                                    <label class="form-check-label" for="check4">登山</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check5">
+                                    <label class="form-check-label" for="check5">滑板</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check6">
+                                    <label class="form-check-label" for="check6">快走</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check7">
+                                    <label class="form-check-label" for="check7">格鬥</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check8">
+                                    <label class="form-check-label" for="check8">馬拉松</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check9">
+                                    <label class="form-check-label" for="check9">單車</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check10">
+                                    <label class="form-check-label" for="check10">鐵人三項</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check11">
+                                    <label class="form-check-label" for="check11">體操</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check12">
+                                    <label class="form-check-label" for="check12">障礙賽路跑</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check13">
+                                    <label class="form-check-label" for="check13">水上活動</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check14">
+                                    <label class="form-check-label" for="check14">籃球</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check15">
+                                    <label class="form-check-label" for="check15">網球</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check16">
+                                    <label class="form-check-label" for="check16">棒球</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check17">
+                                    <label class="form-check-label" for="check17">桌球</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check18">
+                                    <label class="form-check-label" for="check18">高爾夫</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check19">
+                                    <label class="form-check-label" for="check19">瑜伽</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check20">
+                                    <label class="form-check-label" for="check20">反重力體適能</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check21">
+                                    <label class="form-check-label" for="check21">重量訓練</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check22">
+                                    <label class="form-check-label" for="check22">有氧舞蹈</label>
+                                </div>
+                                <div class="col-6">
+                                    <input class="form-check-input" type="checkbox" id="check23">
+                                    <label class="form-check-label" for="check23">crossfit</label>
+                                </div>
+                                <div class="col-6 row other">
+                                    <label class="form-check-label" for="other">其他</label>
+                                    <div class="col-8">
+                                        <input type="other" class="form-control" id="other">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="form-group row sugar-btn-fatehr-div">
+                            <div class="col-12">
+                                <button type="submit" class="btn sugar-btn">確認送出</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../jquery-3.3.1.min.js"></script>
+</html>
