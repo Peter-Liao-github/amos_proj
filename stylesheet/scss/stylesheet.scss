@@ -665,16 +665,16 @@ ul{
         }
         .bottom-img{
             margin-top: 35%;
-            animation: slideUIn 2s 0.5s 1 both;
+            animation: slideUIn 1s 0.3s 1 both;
         }
         .human{
             left: 6%;
-            animation: slideLIn 2s 1s 1 both;
+            animation: slideLIn 0.6s 0.6s 1 both;
         }
         .data-img{
             left: -3%;
             width: 100%;
-            animation: fIn 0.5s 2.5s 1 both;
+            animation: fIn 0.5s 1s 1 both;
         }
     }
     .core-2{
@@ -685,19 +685,19 @@ ul{
         }
         .bottom-img{
             margin-top: 18%;
-            animation: slideUIn 2s 0.5s 1 both;
+            animation: slideUIn 1s 0.3s 1 both;
         }
         .human{
             left: -7%;
             margin-top: -4%;
             width: 80%;
-            animation: slideRIn 2s 1s 1 both;
+            animation: slideRIn 0.6s 0.6s 1 both;
         }
         .data-img{
             left: -3%;
             margin-top: 3%;
             width: 80%;
-            animation: fIn 0.5s 3s 1 both;
+            animation: fIn 0.5s 1s 1 both;
         }
     }
     .core-3{
@@ -710,10 +710,10 @@ ul{
             left: 12%;
             width: 85%;
             margin-top: -3%;
-            animation: slideLIn 2s 0.5s 1 both;
+            animation: slideLIn 0.6s 0.3s 1 both;
         }
         .data-img{
-            animation: clipRIn 1.7s 1.5s 1 both;
+            animation: clipRIn 0.5s 0.8s 1 both;
             left: -3%;
             width: 85%;
         }
@@ -721,13 +721,13 @@ ul{
             left: -3%;
             width: 85%;
             margin-top: 55%;
-            animation: slideDIn 1.3s 3.4s 1 both;
+            animation: slideDIn 0.8s 1.2s 1 both;
         }
         .data-img-3{
             left: -3%;
             width: 85%;
             margin-top: 70%;
-            animation: slideDIn 1.3s 3.7s 1 both;
+            animation: slideDIn 0.8s 1.4s 1 both;
         }
     }
     .core-4{
@@ -740,29 +740,29 @@ ul{
             left: -7%;
             width: 65%;
             margin-top: 28%;
-            animation: slideUIn 1s 0.5s 1 both;
+            animation: slideUIn 1s 0.3s 1 both;
         }
         .human{
             left: 16%;
             width: 82%;
-            animation: scaleLargerFIn 1.3s 1s 1 both;
+            animation: scaleLargerFIn 0.6s 0.6s 1 both;
         }
         .data-img{
             left: -7%;
             margin-top: 9%;
             width: 60%;
-            animation: clipDInTri 1.5s 2s 1 both;
+            animation: clipDInTri 1s 1.2s 1 both;
         }
         .data-img-2{
             margin-top: -5%;
             width: 60%;
-            animation: fIn 1.3s 1s 1 both;
+            animation: fIn 0.5s 0.8s 1 both;
         }
         .data-img-3{
             left: 17%;
             margin-top: 8%;
             width: 12%;
-            animation: rotateFIn 1.5s 2s 1 both;
+            animation: rotateFIn 1s 1.2s 1 both;
         }
     }
 }
@@ -1651,6 +1651,13 @@ ul{
     }
 }
 
+
+@media (max-width: 1199.7px){
+    .four-core-block{
+        flex-direction: column-reverse;
+    }
+}
+
 @media (max-width: 1024px){
     .navbar{
         &>ul:first-child{
@@ -1752,9 +1759,6 @@ ul{
         padding-top: 70px;
     }
 
-    .four-core-block{
-        flex-direction: column-reverse;
-    }
     .core-text{
         &>h2{
             text-align: center;
