@@ -130,7 +130,8 @@ ul{
     font-weight: 300;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-y: 100%;
+    background-position-x: center;
     h3{
         font-weight: 300;
         letter-spacing: 0.4rem;
@@ -145,8 +146,9 @@ ul{
     background-image: url(../../sugar/img/candy_bg02.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    height: 650px;
+    background-position-x: center;
+    background-position-y: 10%;
+    height: 750px;
     &>div{
         text-align: center;
         padding: 0;
@@ -161,14 +163,14 @@ ul{
     margin: 0 auto;
     background-color: #fff;
     position: relative;
-    top: -180px;
+    top: -280px;
     box-shadow: 4px 4px 8px -4px rgba(20%, 20%, 40%, 0.5);
     &>div{
         margin: 0 auto;
         padding-top: 4rem;
         padding-bottom: 2.5rem;
     }
-    input{
+    .form-control{
         margin-bottom: 12px;
     }
     .col-3{
@@ -1547,6 +1549,9 @@ input[type="checkbox"] {
     .wallet{
         font-size: 0.8rem;
     }
+    .sugar-form{
+        top: -350px;
+    }
 
     .right-block ul{
         right: 10%;l
@@ -1657,6 +1662,10 @@ input[type="checkbox"] {
 
 
 @media (max-width: 1199.7px){
+    .sugar-form{
+        top: -300px;
+    }
+
     .four-core-block{
         flex-direction: column-reverse;
     }
@@ -2060,7 +2069,7 @@ input[type="checkbox"] {
     }
 
     .sugar-top{
-        height: 420px;
+        height: 520px;
         &>div{
             margin-top: 2rem;
             img{
@@ -2068,10 +2077,13 @@ input[type="checkbox"] {
             }
         }
     }
-    .cover h3{
-        font-size: 1.2rem;
-        letter-spacing: .2rem;
-    }
+    .cover{
+        background-image: url(../../sugar/img/candy_bg01_phone.png); 
+        h3{
+            font-size: 1.2rem;
+            letter-spacing: .2rem;
+        }
+    } 
     .sugar-form{
         label,input,.col-3{
             font-size: 0.8rem;
