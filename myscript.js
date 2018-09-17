@@ -12,6 +12,8 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     
+    if(d < 0) {d = "0" ;h = "00"; m = "00"; s = "00"}
+
     document.getElementById('day').innerHTML = d;
     document.getElementById('hour').innerHTML = h;
     document.getElementById('min').innerHTML = m;
