@@ -1278,6 +1278,16 @@ input[type="checkbox"] {
     img{
         width: 100%;
         margin-bottom: 10%;
+        &.linked-img{
+            width: 15%;
+            margin-bottom: 1.5%;
+            margin-left: 4px;
+        }
+        &.linked-img-inner{
+            width: 8%;
+            margin-bottom: 2%;
+            margin-left: 2%;
+        }
     }
     p{
         letter-spacing: 0.1rem;
@@ -1541,7 +1551,19 @@ input[type="checkbox"] {
         width: 32%;
         img{
             width: 85%;
+            &.linked-img{
+                width: 13%;
+                margin-bottom: 1%;
+            }
         }
+    }
+    .team .d-flex.col-12{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .team-img{
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
