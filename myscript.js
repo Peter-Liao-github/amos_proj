@@ -57,6 +57,7 @@ $(function(){
     //click paper
     $('.ch-paper').click(function(){
         $('.ch-paper-show').css('display','initial')
+        $('.ch-paper').css('padding-right','10rem')
     })
 
     //team member card
