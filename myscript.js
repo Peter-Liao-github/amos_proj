@@ -57,7 +57,8 @@ $(function(){
     //click paper
     $('.ch-paper').click(function(){
         $('.ch-paper-show').css('display','initial')
-        $('.ch-paper').css('padding-right','10rem')
+        // $('.ch-paper').css('padding-right','10rem')
+        $('.ch-paper').animate({'padding-right':'10rem'});
     })
 
     //team member card
@@ -136,7 +137,7 @@ window.sr = ScrollReveal({
     // 參數設定[註1]
     origin: "bottom",  // 起始位置
     distance: "80px",  // 距離
-    duration: 800,  // 動畫時間
+    duration: 1000,  // 動畫時間
     delay: 200,  // 動畫延遲時間
     rotate: { x: 0, y: 0, z: 0 },  // 旋轉角度
     opacity: 0,  // 透明度
@@ -144,7 +145,7 @@ window.sr = ScrollReveal({
     easing: "cubic-bezier(0.6, 0.2, 0.1, 1)", // 動畫速度曲線
     container: window.document.documentElement, // 外層
     mobile: true, // 支援行動裝置
-    reset: true, // 每次都啟動動畫
+    reset: false, // 每次都啟動動畫
     useDelay: "always", // 延遲動畫次數
     viewFactor: 0.2, // 當該物件在可視範圍內，則顯示此物件(0.2表示可視範圍20%)
     viewOffset: { top: 0, right: 0, bottom: 0, left: 0 }, // 當外層有設定間隔造成偏移，則請設定在此維持精準度
